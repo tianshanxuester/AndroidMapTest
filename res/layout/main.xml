@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainlayout"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/mainlayout"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:background="#FFFFFF">
 
     <com.google.android.maps.MapView
         android:id="@+id/mapview"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="200px"
         android:clickable="true"
-        android:apiKey="0bTofhsdGH7yPqOBvpefIer4o2EAwJzca1N2kGw"
+        android:apiKey="0bTofhsdGH7yT5P5U_YNhoV6oHsi-rqIZDmYo7g"
     />
 
-</RelativeLayout>
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:paddingLeft="2dip"
+        android:paddingRight="2dip"
+        android:paddingTop="5dip"
+		android:background="#333333"
+		android:stretchColumns="1">
+	    <TableRow>
+	    	<Button
+		     	android:layout_height="fill_parent"
+		     	android:layout_width="fill_parent"
+		     	android:text="test"
+		     	android:onClick="showMap" />
+		     <Button
+		     	android:layout_height="fill_parent"
+		     	android:layout_width="fill_parent"
+		     	android:text="test"
+			    android:onClick="newNote" />
+	    </TableRow>
+    </TableLayout>
+</LinearLayout>
